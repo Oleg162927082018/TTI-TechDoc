@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="1-components.svg">
+   sodipodi:docname="components-core.svg">
   <defs
      id="defs2">
     <marker
@@ -1221,17 +1221,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.39"
-     inkscape:cx="2784.1281"
-     inkscape:cy="2041.2945"
+     inkscape:cx="2158.4871"
+     inkscape:cy="1107.8313"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="true"
      units="mm"
-     inkscape:window-width="1600"
-     inkscape:window-height="1262"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
      inkscape:window-x="-9"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
      inkscape:snap-global="false"
      inkscape:snap-grids="false">
     <inkscape:grid
@@ -1350,57 +1350,6 @@
            id="tspan1800"
            x="290.56033"
            y="258.28745">DLL Manager</tspan></text>
-    </g>
-    <g
-       transform="translate(93.802181,117.85902)"
-       style="display:inline"
-       id="g1772-6">
-      <rect
-         y="217.57759"
-         x="251.44716"
-         height="76.332176"
-         width="80.822304"
-         id="rect1764-3"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         id="text14-8-4-9-6-41-0-9-6"
-         y="252.42134"
-         x="290.80475"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           sodipodi:role="line"
-           id="tspan1960"
-           x="290.80475"
-           y="252.42134">Test Adapter</tspan><tspan
-           sodipodi:role="line"
-           id="tspan1962"
-           x="290.80475"
-           y="264.76855">(DLL lib)</tspan></text>
-    </g>
-    <g
-       id="g2031"
-       transform="translate(-549.458,-177.60279)">
-      <rect
-         y="539.24878"
-         x="714.42944"
-         height="38.395927"
-         width="104.07094"
-         id="rect1764-4-1-5"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.40239993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         id="text14-8-4-9-6-41-0-9-5-6-4"
-         y="555.20264"
-         x="765.16687"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           sodipodi:role="line"
-           id="tspan2019"
-           x="765.16687"
-           y="555.20264">Test</tspan><tspan
-           sodipodi:role="line"
-           id="tspan2021"
-           x="765.16687"
-           y="567.54987">(executalble module)</tspan></text>
     </g>
     <g
        id="g7641"
@@ -1847,26 +1796,14 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotM-6)"
-       d="m 300.23413,380.50474 -29.71319,10e-6"
-       id="path8385-4"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
        style="display:inline;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#CurveIn-7-5)"
-       d="m 343.43722,380.10776 -33.80789,0.41998"
+       d="M 653.47461,215.25199 414.78424,214.31514"
        id="path8385-3-6-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotM-6-0)"
-       d="m 455.61756,377.18581 -28.0333,10e-6"
-       id="path8385-4-6"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
        style="display:inline;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#CurveIn-7-5-2)"
-       d="m 504.0451,376.78883 -39.68752,10e-6"
+       d="m 504.0451,376.78883 -93.2826,40.02672"
        id="path8385-3-6-7-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -1895,14 +1832,8 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotM-6-0-6-1)"
-       d="m 457.96931,195.51052 -33.24097,0.168"
-       id="path8385-4-6-0-34"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
        style="display:inline;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#CurveIn-7-5-2-0-4)"
-       d="M 502.37814,358.27649 460.62305,203.20934"
+       d="M 502.37814,358.27649 412.45532,319.89737"
        id="path8385-3-6-7-9-4-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -2271,81 +2202,127 @@
       </g>
     </g>
     <g
-       id="g2563"
-       transform="translate(58.248037,-75.423431)">
-      <rect
-         y="234.65089"
-         x="285.06955"
-         height="76.332176"
-         width="80.822304"
-         id="rect1764-3-9"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         id="text14-8-4-9-6-41-0-9-6-4"
-         y="269.49466"
-         x="324.42712"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           sodipodi:role="line"
-           id="tspan1991"
-           x="324.42712"
-           y="269.49466">Tag Adapter</tspan><tspan
-           sodipodi:role="line"
-           id="tspan1993"
-           x="324.42712"
-           y="281.84189">(DLL lib)</tspan></text>
+       id="g4349"
+       transform="translate(-52.916669,121.70835)">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path8385-4-6-0-34"
+         d="m 457.96931,195.51052 -33.24097,0.168"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotM-6-0-6-1)" />
       <g
-         transform="translate(-138.01511,361.02304)"
-         id="g2065-6"
+         transform="translate(58.248037,-75.423431)"
+         id="g2563">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect1764-3-9"
+           width="80.822304"
+           height="76.332176"
+           x="285.06955"
+           y="234.65089" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="324.42712"
+           y="269.49466"
+           id="text14-8-4-9-6-41-0-9-6-4"><tspan
+             y="269.49466"
+             x="324.42712"
+             id="tspan1991"
+             sodipodi:role="line">Tag Adapter</tspan><tspan
+             y="281.84189"
+             x="324.42712"
+             id="tspan1993"
+             sodipodi:role="line">(DLL lib)</tspan></text>
+        <g
+           style="display:inline"
+           id="g2065-6"
+           transform="translate(-138.01511,361.02304)">
+          <rect
+             style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1764-46-09"
+             width="8.586834"
+             height="14.596066"
+             x="490.22543"
+             y="-120.74346" />
+          <rect
+             style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1764-46-0-9"
+             width="6.9069681"
+             height="3.6767495"
+             x="486.76483"
+             y="-118.22363" />
+          <rect
+             style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1764-46-0-5-4"
+             width="6.9069681"
+             height="3.6767495"
+             x="486.99167"
+             y="-112.1004" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4603"
+       transform="translate(0,42.333335)">
+      <g
+         id="g1772-6"
+         style="display:inline"
+         transform="translate(40.885511,117.85902)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect1764-3"
+           width="80.822304"
+           height="76.332176"
+           x="251.44716"
+           y="217.57759" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="290.80475"
+           y="252.42134"
+           id="text14-8-4-9-6-41-0-9-6"><tspan
+             y="252.42134"
+             x="290.80475"
+             id="tspan1960"
+             sodipodi:role="line">Test Adapter</tspan><tspan
+             y="264.76855"
+             x="290.80475"
+             id="tspan1962"
+             sodipodi:role="line">(DLL lib)</tspan></text>
+      </g>
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path8385-4-6"
+         d="m 402.70086,377.18581 -28.0333,10e-6"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotM-6-0)" />
+      <g
+         transform="translate(-132.10546,464.37057)"
+         id="g2065-9"
          style="display:inline">
         <rect
            y="-120.74346"
            x="490.22543"
            height="14.596066"
            width="8.586834"
-           id="rect1764-46-09"
+           id="rect1764-46-23"
            style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         <rect
            y="-118.22363"
            x="486.76483"
            height="3.6767495"
            width="6.9069681"
-           id="rect1764-46-0-9"
+           id="rect1764-46-0-53"
            style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         <rect
            y="-112.1004"
            x="486.99167"
            height="3.6767495"
            width="6.9069681"
-           id="rect1764-46-0-5-4"
+           id="rect1764-46-0-5-2"
            style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       </g>
-    </g>
-    <g
-       style="display:inline"
-       id="g2065-9"
-       transform="translate(-77.831957,461.65689)">
-      <rect
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect1764-46-23"
-         width="8.586834"
-         height="14.596066"
-         x="490.22543"
-         y="-120.74346" />
-      <rect
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect1764-46-0-53"
-         width="6.9069681"
-         height="3.6767495"
-         x="486.76483"
-         y="-118.22363" />
-      <rect
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect1764-46-0-5-2"
-         width="6.9069681"
-         height="3.6767495"
-         x="486.99167"
-         y="-112.1004" />
     </g>
     <g
        style="display:inline"
@@ -2374,30 +2351,65 @@
          y="-112.1004" />
     </g>
     <g
-       style="display:inline"
-       id="g2065-12"
-       transform="translate(-235.52474,486.74346)">
-      <rect
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect1764-46-43"
-         width="8.586834"
-         height="14.596066"
-         x="490.22543"
-         y="-120.74346" />
-      <rect
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect1764-46-0-84"
-         width="6.9069681"
-         height="3.6767495"
-         x="486.76483"
-         y="-118.22363" />
-      <rect
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect1764-46-0-5-6"
-         width="6.9069681"
-         height="3.6767495"
-         x="486.99167"
-         y="-112.1004" />
+       id="g4591"
+       transform="translate(1.5875,19.050002)">
+      <g
+         transform="translate(-443.62466,-362.81118)"
+         id="g2031">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.40239993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect1764-4-1-5"
+           width="104.07094"
+           height="38.395927"
+           x="714.42944"
+           y="539.24878" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="765.16687"
+           y="555.20264"
+           id="text14-8-4-9-6-41-0-9-5-6-4"><tspan
+             y="555.20264"
+             x="765.16687"
+             id="tspan2019"
+             sodipodi:role="line">Test</tspan><tspan
+             y="567.54987"
+             x="765.16687"
+             id="tspan2021"
+             sodipodi:role="line">(executalble module)</tspan></text>
+      </g>
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path8385-4"
+         d="m 406.06747,195.29635 -29.71319,1e-5"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotM-6)" />
+      <g
+         transform="translate(-129.69141,302.21355)"
+         id="g2065-12"
+         style="display:inline">
+        <rect
+           y="-120.74346"
+           x="490.22543"
+           height="14.596066"
+           width="8.586834"
+           id="rect1764-46-43"
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           y="-118.22363"
+           x="486.76483"
+           height="3.6767495"
+           width="6.9069681"
+           id="rect1764-46-0-84"
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           y="-112.1004"
+           x="486.99167"
+           height="3.6767495"
+           width="6.9069681"
+           id="rect1764-46-0-5-6"
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
     </g>
     <g
        id="g483">
