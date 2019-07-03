@@ -10,9 +10,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="841mm"
-   height="594mm"
-   viewBox="0 0 841 594"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -448,9 +448,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="1641.9182"
-     inkscape:cy="1131.5258"
+     inkscape:zoom="1.0180159"
+     inkscape:cx="561.25984"
+     inkscape:cy="396.85039"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="true"
@@ -476,7 +476,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -484,10 +484,11 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="UseCase"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(0,-384)">
     <g
        style="display:inline"
-       transform="translate(17.09391,244.86098)"
+       transform="matrix(0.68674394,0,0,0.68674394,4.8970239,482.16706)"
        id="g863-5">
       <ellipse
          ry="24.076799"
@@ -512,15 +513,15 @@
            y="-90.135651">Save test-suite</tspan></text>
     </g>
     <ellipse
-       ry="6.2177081"
-       rx="6.614583"
-       cy="293.85638"
-       cx="39.718628"
+       ry="4.2699733"
+       rx="4.5425248"
+       cy="515.81445"
+       cx="20.434412"
        id="path46"
-       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1" />
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.18170099;stroke-opacity:1" />
     <g
        style="display:inline"
-       transform="translate(17.99651,395.10244)"
+       transform="matrix(0.68674394,0,0,0.68674394,5.516879,585.34448)"
        id="g863-5-3-4">
       <ellipse
          ry="24.076799"
@@ -541,20 +542,20 @@
            y="-96.365913">2.3. Add test-case</tspan></text>
     </g>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278)"
-       d="m 321.49883,264.86247 -52.93997,27.24684"
+       style="fill:none;stroke:#000000;stroke-width:0.34337196;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278)"
+       d="m 213.94525,495.90297 -36.3562,18.7116"
        id="path3274"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278-0)"
-       d="M 144.10038,294.12391 48.117548,293.92356"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.34337196;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278-0)"
+       d="M 92.117946,515.99808 26.202319,515.86049"
        id="path3274-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <g
        style="display:inline"
-       transform="translate(14.870537,468.87091)"
+       transform="matrix(0.68674394,0,0,0.68674394,3.3701364,636.00452)"
        id="g863-5-3-4-7-8">
       <ellipse
          ry="24.076799"
@@ -576,7 +577,7 @@
     </g>
     <g
        style="display:inline"
-       transform="translate(18.92216,319.37699)"
+       transform="matrix(0.68674394,0,0,0.68674394,6.1525635,533.34048)"
        id="g863-5-3-4-7-4">
       <ellipse
          ry="24.076799"
@@ -601,20 +602,20 @@
            y="-89.257172">test-suite</tspan></text>
     </g>
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278-1-4)"
-       d="M 153.78397,236.42125 48.857972,290.7063"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.34337196;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278-1-4)"
+       d="M 98.768095,476.37113 26.710801,513.65106"
        id="path3274-6-84"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278-1-2)"
-       d="M 145.74467,359.56588 45.215261,302.53317"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.34337196;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278-1-2)"
+       d="M 93.247152,560.93995 24.209191,521.77309"
        id="path3274-6-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <g
        style="display:inline"
-       transform="translate(176.39419,344.76754)"
+       transform="matrix(0.68674394,0,0,0.68674394,114.29552,550.77729)"
        id="g863-5-3-4-7-6-0">
       <ellipse
          ry="24.076799"
@@ -635,14 +636,14 @@
            y="-96.740089">2.4. Remove test-case</tspan></text>
     </g>
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278-1-3-7)"
-       d="M 153.56375,160.60948 45.412989,288.91584"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.34337196;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278-1-3-7)"
+       d="M 98.616857,424.30786 24.344979,512.42147"
        id="path3274-6-4-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278-2)"
-       d="M 305.17983,236.75115 269.45202,222.09013"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.34337196;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3278-2)"
+       d="M 202.73828,476.59769 178.20242,466.52932"
        id="path3274-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />

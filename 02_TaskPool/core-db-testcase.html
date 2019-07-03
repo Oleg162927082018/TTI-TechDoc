@@ -1,0 +1,235 @@
+<html>
+<head>
+  <link href="style.css" rel="stylesheet">
+  <title>struct TestCase</title>
+<head>
+<body>
+
+<a name="testcase"><h1>struct TestCase</h1></a>
+<hr />
+
+<p><b>Модуль:</b></p>
+<blockquote><p>test-case.h, test-case.cpp</p></blockquote>
+
+<p><b>Назначение:</b></p>
+<blockquote><p>Структура содержащая данные о тест-кейсе.</p></blockquote>
+
+<blockquote>
+
+<table>
+<tr><td>
+<p>QString <b>ID</b>;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Идентификатор тест-кейса. Этот идентификатор возвращается библиотекой сопряжения при создании тест-кейса
+и определяет вызовы к какой библиотеке будут выполняться при работе с тест-кейсом.</p>
+
+<p><b>Сценарии:</b> 1.1 Create test-case.</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>TestCase tc;<br>
+tc.ID = "TEST_EMULATOR";</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+<br>
+
+<table>
+<tr><td>
+<p>QString <b>fullFileName</b>;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;полный путь к файлу в котором хранятся данные тест-кейса.</p>
+
+<p><b>Сценарии:</b> 1.1 Create test-case.</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>TestCase tc;<br>
+tc.fullFileName = "d:/TTI/tests/example.tcs";</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>QString <b>currConfigName</b>;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Имя конфигурации по умолчанию.</p>
+
+<p><b>Сценарии:</b> 1.1 Create test-case.</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>TestCase tc;<br>
+tc.currConfigName = "Default";</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>QMap&lt;QString, TestCaseConfig&gt; <b>configList</b>;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Коллекция всех конфигураций.</p>
+
+<p><b>Сценарии:</b> </p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+
+<p>TestCaseConfig tcCfg;</p>
+
+<p>tcCfg.waitingTime = 600;<br>
+tcCfg.maxThreads = 4;<br>
+tcCfg.compressionLevel = 2;<br>
+tcCfg.isSaveOutput = true;<br>
+tcCfg.description = "Test-case example";<br>
+tcCfg.extraParams = "&lt;bin&gt;d:/TTI/tests/bin/test-emulator.exe&lt;/bin&gt;
+&lt;prc-bugs&gt;50&lt;/prc-bugs&gt;
+&lt;sources&gt;&lt;source id="0"&gt;D:/Home/Total_Test_Integrator/bin/test-sorces/Rome&lt;/source&gt;&lt;/sources&gt;";</p>
+
+<p>TestCase tc;<br>
+tc.configList.insert("Default", tcCfg);</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+</blockquote>
+
+<br>  
+<a name="testcaseconfig"><h1>struct TestCaseConfig</h1></a>
+<hr />
+
+<p><b>Модуль:</b></p>
+<blockquote><p>test-case.h, test-case.cpp</p></blockquote>
+
+<p><b>Назначение:</b></p>
+<blockquote><p>Структура содержащая данные об одной из конфигураций тест-кейса.</p></blockquote>
+
+<blockquote>
+
+<table>
+<tr><td>
+<p>int <b>waitingTime</b>;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Время ожидания завершения теста в секундах. Если тест самостоятельно не завершится
+по истечении этого времени, то он будет прерван средствами операционной системы.</p>
+
+<p><b>Сценарии:</b> 1.1 Create test-case.</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>TestCaseConfig tcCfg;<br>
+tcCfg.waitingTime = 600;</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+<br>
+
+<table>
+<tr><td>
+<p>int <b>maxThreads</b>;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Максимальное количество одновременно запущенных тестов.</p>
+
+<p><b>Сценарии:</b> 1.1 Create test-case.</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>TestCaseConfig tcCfg;<br>
+tcCfg.maxThreads = 4;</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+<br>
+
+<table>
+<tr><td>
+<p>int <b>compressionLevel</b>;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Уровень сжатия базы данных:
+<ul>
+  <li>0 - без сжатия;</li>
+  <li>1 - если результат работы теста идентичен текущему бенчмарку, то результат стирается и заменяется ссылкой на бенчмарк;</li>
+  <li>2 - то же, что и 1 плюс производится сравнение с результатом полученным на предыдущем шаге;</li>
+  <li>3 - результат работы теста сравнивается со результатами полученными на всех предыдущих запусках.</li>
+</ul></p>
+
+<p><b>Сценарии:</b> </p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>TestCaseConfig tcCfg;<br>
+tcCfg.compressionLevel = 2;</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+<br>
+
+<table>
+<tr><td>
+<p>bool <b>isSaveOutput</b>;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Флаг указывающий сохранять(true) или нет(false) консольный вывод теста.</p>
+
+<p><b>Сценарии:</b> 1.1 Create test-case.</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>TestCaseConfig tcCfg;<br>
+tcCfg.isSaveOutput = true;</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+<br>
+
+<table>
+<tr><td>
+<p>QString <b>description</b>;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Описание тест-кейса.</p>
+
+<p><b>Сценарии:</b> 1.1 Create test-case.</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>TestCaseConfig tcCfg;<br>
+tcCfg.description = "Test-case example.";</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+<br>
+
+<table>
+<tr><td>
+<p>QString <b>extraParams</b>;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Набор параметров тест-кейса, который предоставляется библиотекой сопряжения с тестами и ей же и обрабатывается.
+Может иметь любой формат представимый в виде строки. Например, набор xml тегов или json выражение.</p>
+
+<p><b>Сценарии:</b> 1.1 Create test-case.</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>TestCaseConfig tcCfg;<br>
+tcCfg.extraParams = "&lt;bin&gt;d:/TTI/tests/bin/test-emulator.exe&lt;/bin&gt;
+&lt;prc-bugs&gt;50&lt;/prc-bugs&gt;
+&lt;sources&gt;&lt;source id="0"&gt;D:/Home/Total_Test_Integrator/bin/test-sorces/Rome&lt;/source&gt;&lt;/sources&gt;";</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+</blockquote>
+
+</body>
+</html>

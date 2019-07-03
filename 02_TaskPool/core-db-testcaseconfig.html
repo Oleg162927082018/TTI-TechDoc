@@ -1,0 +1,816 @@
+<html>
+<head>
+  <link href="style.css" rel="stylesheet">
+  <title>struct TestCaseConfig</title>
+<head>
+<body>
+
+<h1>struct TestCaseConfig</h1></a>
+<hr />
+
+<p><b>Модуль:</b></p>
+<blockquote><p>test-case.h, test-case.cpp</p></blockquote>
+
+<p><b>Назначение:</b></p>
+<blockquote><p>Класс осуществляет запись и чтение данных. 
+На данный момент используется XML формат, так как он удобен при экспериментально исследовательских работах хотя и не компактен.
+В последующем заменой данного класса можно реализовать хранение данных в json, бинарном формате или на сервере баз данных.</p></blockquote>
+
+<br>
+<p><b>Публичные методы для работы с именами файлов:</b></p>
+<hr>
+
+<blockquote>
+
+<table>
+<tr><td>
+<p>static QString <b>GetRunName</b>(int runNum);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;возвращает имя папки соответствующей запуску.</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>int runNum - порядковый номер запуска тестов</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>имя папки сооветствующей номеру запуска</p></li>
+</ul>
+
+<p><b>Сценарии:</b> </p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>QString runFolder = GetRunName(2);</p>
+<p><i>runFolder: "00000002"</i></p>
+</blockquote>
+
+</tr></td>
+</table>
+
+<br>
+
+<table>
+<tr><td>
+<p>static QString <b>GetOutFolder</b>(QString testCaseFullFileName, QString testName, QString RunName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;возвращает полный путь к папке содержащей файлы записанные тестом.</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>QString testCaseFullFileName - полный путь к тест-кейсу (файлу с расширением tcs);</p></li>
+<li><p>QString testName - путь к тесту;</p></li>
+<li><p>QString RunName - имя папки сооветствующей номеру запуска.</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>полный путь к папке содержащей результат работы теста</p></li>
+</ul>
+
+<p><b>Сценарии:</b> </p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>QString outFolder = GetOutFolder("d:/TTI/tests/example.tcs", "group/subgroup/test-001", "00000002");</p>
+<p><i>outFolder: "d:/TTI/tests/example/OUTPUT/group/subgroup/test-001/00000002"</i></p><br>
+<p>QString outFolder = GetOutFolder("d:/TTI/tests/example.tcs", "group/subgroup/test-001", "");</p>
+<p><i>outFolder: "d:/TTI/tests/example/OUTPUT/group/subgroup/test-001/"</i></p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static QString <b>GetResultFullFileName</b>(QString testCaseFullFileName, QString RunName, QString testName, QString ext);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;возвращает полный путь к файлу содержащему консольный вывод теста или к файлу содержащему данные собранные интегратором о работе теста.</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>QString testCaseFullFileName - полный путь к тест-кейсу (файлу с расширением tcs);</p></li>
+<li><p>QString RunName - имя папки сооветствующей номеру запуска.</p></li>
+<li><p>QString testName - путь к тесту;</p></li>
+<li><p>QString ext - расширение файла (log или xml);</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>полный путь к файлу</p></li>
+</ul>
+
+<p><b>Сценарии:</b> </p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>QString resultFolder = GetResultFullFileName("d:/TTI/tests/example.tcs", "00000002", "group/subgroup/test-001", "log");</p>
+<p><i>resultFolder: "d:/TTI/tests/example/RESULT/00000002/group/subgroup/test-001.log"</i></p><br>
+<p>QString resultFolder = GetResultFullFileName("d:/TTI/tests/example.tcs", "00000002", "group/subgroup/test-001", "xml");</p>
+<p><i>resultFolder: "d:/TTI/tests/example/RESULT/00000002/group/subgroup/test-001.xml"</i></p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static QString <b>GetStatusFullFileName</b>(QString testCaseFullFileName, QString testName, QString ext);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;возвращает полный путь к файлу содержащему описание теста, список бенчмарков и тэги связанные с тестом.</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>QString testCaseFullFileName - полный путь к тест-кейсу (файлу с расширением tcs);</p></li>
+<li><p>QString testName - путь к тесту;</p></li>
+<li><p>QString ext - расширение файла xml;</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>полный путь к файлу</p></li>
+</ul>
+
+<p><b>Сценарии:</b> </p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>QString statusFolder = GetStatusFullFileName("d:/TTI/tests/example.tcs", "group/subgroup/test-001", "xml");</p>
+<p><i>statusFolder: "d:/TTI/tests/example/STATUS/group/subgroup/test-001.xml"</i></p><br>
+</blockquote>
+
+</tr></td>
+</table>
+
+</blockquote>
+
+<br>
+<p><b>Публичные методы для работы с тест-кейсами:</b></p>
+<hr>
+
+<blockquote>
+
+<table>
+<tr><td>
+<p>static void <b>SaveTestCase</b>(QString testCaseFullFileName, TestCase *tc);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;сохраняет на диске тест-кейс (файл с расширением tcs). </p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>QString testCaseFullFileName - полный путь к тест-кейсу (файлу с расширением tcs);</p></li>
+<li><p>TestCase *tc - указатель на структуру данных тест-кейса. (см. struct TestCase)</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>-</p></li>
+</ul>
+
+<p><b>Сценарии:</b> 1.1 Create test-case.</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+
+<p>TestCaseConfig tcCfg;</p>
+
+<p>tcCfg.waitingTime = 600;<br>
+tcCfg.maxThreads = 4;<br>
+tcCfg.compressionLevel = 2;<br>
+tcCfg.isSaveOutput = true;<br>
+tcCfg.description = "Test-case example";<br>
+tcCfg.extraParams = "&lt;bin&gt;d:/TTI/tests/bin/test-emulator.exe&lt;/bin&gt;
+&lt;prc-bugs&gt;50&lt;/prc-bugs&gt;
+&lt;sources&gt;&lt;source id="0"&gt;D:/Home/Total_Test_Integrator/bin/test-sorces/Rome&lt;/source&gt;&lt;/sources&gt;";</p>
+
+<p>TestCase tc;</p>
+
+<p>tc.ID = "TEST_EMULATOR";<br>
+tc.configList.insert("Default", tcCfg);<br>
+tc.currConfigName = "Default";</p>
+
+<p>SaveTestCase("d:/TTI/tests/example.tcs", &tc);</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+<br>
+
+<table>
+<tr><td>
+<p>static TestCase *<b>GetTestCase</b>(QString testCaseFullFileName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;считывает с диска тест-кейс и возвращает указатель на структуру TestCase содержащую все данные (см. struct TestCase). </p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>QString testCaseFullFileName - полный путь к тест-кейсу (файлу с расширением tcs);</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>указатель на структуру содержащую все загруженные по тест-кейсу данные.</p></li>
+</ul>
+
+<p><b>Сценарии:</b> 1.2 Open test-case.</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+
+<p>TestCase *tc = GetTestCase("d:/TTI/tests/example.tcs");<br>
+...<br>
+delete tc;</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+</blockquote>
+
+<br>
+<p><b>Публичные методы для работы со статусом теста:</b></p>
+<hr>
+
+<blockquote>
+    
+<table>
+<tr><td>
+<p>static void <b>CreateTestCaseInfrastructure</b>(QString testCaseFullFileName, QMap&lt;QString, QString&gt; *testList);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;//Create folders and status files. testList must contain pairs path to status file and content of <data> section
+    //which needed for run test. Example: &lt;"srcFolder/subFolder/subSubFolder/test-001.script", "&lt;path src="0"&gt;test-001.script&lt;/path&gt;"&lt;</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static QStringList <b>GetTestCaseFolders</b>(QString testCaseFullFileName, QString relativeOwnerFolderName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static QList&lt;TestStatus *&gt; <b>GetTestCaseFolderItems</b>(QString testCaseFullFileName, QString relativeOwnerFolderName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static TestStatus *<b>GetTestStatus</b>(QString testCaseFullFileName, QString statusRelativeFileName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static void <b>SaveTestStatus</b>(QString testCaseFullFileName, TestStatus *ts);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+</blockquote>
+
+<br>
+<p><b>Публичные методы для работы с планом выполнения тестов:</b></p>
+<hr>
+
+<blockquote>
+
+<table>
+<tr><td>
+<p>static void <b>SaveTestingPlan</b>(QString planFullFileName, QList&lt;TestCase*&gt; *testCases, QList&lt;QPair&lt;TestCase *, TestStatus *&gt;&gt; *tests, bool isRunOnce, bool isUpdateLastResult);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static QDomDocument *<b>GetTestingPlan</b>(QString planFullFileName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+</blockquote>
+
+<br>
+<p><b>Публичные методы для работы с описанием запуска тестов:</b></p>
+<hr>
+
+<blockquote>
+
+<table>
+<tr><td>
+<p>static void <b>SaveRunDescription</b>(QString testCaseFullFileName, QString runName, RunDescription *rd);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static RunDescription *<b>GetRunDescription</b>(QString testCaseFullFileName, QString runName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+
+</blockquote>
+
+<br>
+<p><b>Публичные методы для работы с результатами собранными интегратором о работе теста:</b></p>
+<hr>
+
+<blockquote>
+
+<table>
+<tr><td>
+<p>static void <b>SaveTestResult</b>(QString testCaseFullFileName, QString runName, QString relativeTestName, TestResult *tr);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static void <b>SaveTestConsoleOutput</b>(QString testCaseFullFileName, QString runName, QString relativeTestName, QStringList *consoleOutput);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static TestResult *<b>GetTestResult</b>(QString testCaseFullFileName, QString relativeTestName, QString runName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static QByteArray <b>GetConsoleLog</b>(QString testCaseFullFileName, QString relativeTestName, QString runName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static QVector&lt;int&gt; *<b>GetRunList</b>(QString testCaseFullFileName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static QVector&lt;int&gt; *<b>GetOutList</b>(QString testCaseFullFileName, QString relativeTestName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+</blockquote>
+
+<br>
+<p><b>Публичные методы для работы с тегами:</b></p>
+<hr>
+
+<blockquote>
+
+<table>
+<tr><td>
+<p>static TagCollection *<b>LoadTagCollection</b>(QString fullFileName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static void <b>SaveTagCollection</b>(TagCollection *tagCollection);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static void <b>DeleteTagCollection</b>(QString fullFileName);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+</blockquote>
+
+<br>
+<p><b>Приватные методы для работы с тегами:</b></p>
+<hr>
+
+<blockquote>
+
+<table>
+<tr><td>
+<p>static void <b>LoadTagFolderElements</b>(QDomElement &amp;folderElement, TagFolder *tagFolder, TagCollection *owner);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+<br>
+
+<table>
+<tr><td>
+<p>static void <b>SaveTagFolderElements</b>(QDomElement &amp;folderElement, TagFolder *tagFolder);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+
+<p><b>Параметры:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Возврат:</b></p>
+<ul>
+<li><p>...</p></li>
+</ul>
+
+<p><b>Сценарии:</b> ...</p>
+
+<p><b>Пример:</b></p>
+<blockquote>
+<p>...</p>
+</blockquote>
+
+</tr></td>
+</table>
+  
+</blockquote>
+
+<br>
+<p><b>Публичные методы для работы с тест-сьютом:</b></p>
+<hr>
+
+<blockquote>
+---
+</blockquote>
+
+</body>
+</html>
