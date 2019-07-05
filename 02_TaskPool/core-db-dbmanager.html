@@ -154,7 +154,7 @@
 <table>
 <tr><td>
 <p>static void <b>SaveTestCase</b>(QString testCaseFullFileName, TestCase *tc);</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;сохраняет на диске тест-кейс (файл с расширением tcs). </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;сохраняет на диске тест-кейс (файл с расширением tcs см.<a href="testcase-files.svg" target="content">структура хранения тест-кейса в файловой системе</a>). </p>
 
 <p><b>Параметры:</b></p>
 <ul>
@@ -200,7 +200,8 @@ tc.currConfigName = "Default";</p>
 <table>
 <tr><td>
 <p>static TestCase *<b>GetTestCase</b>(QString testCaseFullFileName);</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;считывает с диска тест-кейс и возвращает указатель на структуру TestCase содержащую все данные (см. struct TestCase). </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;считывает с диска тест-кейс (файл с расширением tcs см.<a href="testcase-files.svg" target="content">структура хранения тест-кейса в файловой системе</a>)
+и возвращает указатель на структуру TestCase содержащую все данные (см. <a href="core-db-testcase.html#testcase" target="content">struct TestCase</a>). </p>
 
 <p><b>Параметры:</b></p>
 <ul>
